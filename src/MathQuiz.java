@@ -10,6 +10,12 @@ public class MathQuiz {
 		broj1 = (int)(Math.random()*10)+1;
 		broj2 = (int)(Math.random()*10)+1;
 		System.out.println("Koliko je "+broj1+" + "+ broj2 );
+		 unos = new Scanner(System.in);
+		 int rezultat = unos.nextInt();
+		 if(broj1 + broj2 == rezultat) {
+			 System.out.println("Odgovor je tacan.");
+		 } else
+			 System.out.println("Odgovor nije tacan.");
 	
 		
 	}
