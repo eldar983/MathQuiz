@@ -59,4 +59,18 @@ public class MathQuiz {
 		else System.out.println("Odgovor je netacan");
 		
 	}
+	public static void korjenovanje(Scanner unos) {
+		broj1 = (int)(Math.random()*10)+1;
+		int temp = broj1;
+		broj1*=broj1;
+		
+		System.out.println("Koliko je korijen iz " + broj1);
+
+		solution = unos.nextDouble();
+		if(solution == temp) {
+			System.out.println("Odgovor je tacan");
+		}
+		else System.out.println("Odgovor je netacan");	
+	}
+	
 }
