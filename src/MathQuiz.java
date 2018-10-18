@@ -50,7 +50,13 @@ public class MathQuiz {
 
 		//da bi bili sigurni da je broj1 djeljiv sa brojem2 
 		broj1=broj1*broj2;
-		
+		System.out.println("Koliko je " + broj1+ " / " + broj2 );
+
+		solution = unos.nextInt();
+		if(solution == broj1/broj2) {
+			System.out.println("Odgovor je tacan");
+		}
+		else System.out.println("Odgovor je netacan");
 		
 	}
 }
