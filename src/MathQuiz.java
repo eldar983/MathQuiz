@@ -72,5 +72,18 @@ public class MathQuiz {
 		}
 		else System.out.println("Odgovor je netacan");	
 	}
+	public static void kvadriranje (Scanner unos) {
+		broj1 = (int)(Math.random()*10)+1;
+		int temp = broj1;
+		broj1*=broj1;
+		
+		System.out.println("Koliko je kvadrat broja " + temp);
+
+		solution = unos.nextDouble();
+		if(solution == broj1) {
+			System.out.println("Odgovor je tacan");
+		}
+		else System.out.println("Odogovor je netacan");	
+	}
 	
 }
